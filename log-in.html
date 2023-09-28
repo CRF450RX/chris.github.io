@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(191, 240, 240);
+            margin: 0;
+            padding:0;
+        }
+       h1 {
+        padding: 20px;
+        margin-top: 300px;
+       }
+       button {
+        margin-top: 10px;
+       }
+    </style>
+    
+    </style>
+    <title>Password Validation</title>
+    <script>
+        function validatePassword() {
+            var password = document.getElementById("password").value;
+         
+            var correctPassword = "antenicenefatherproj";
+
+            if (password === correctPassword) {
+                window.location.href = "http://www.antenicenefathers.com/controls/";
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        }
+    </script>
+   
+</head>
+<body>
+
+    <h1>Password Validation</h1>
+    <form>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+        <button type="button" onclick="validatePassword()">Submit</button>
+    </form>
+</body>
+</html>
